@@ -40,15 +40,7 @@ It allows users to input text and instantly analyze how different algorithms per
 
 ---
 
-## 🖥️ **System Flow**
 
-```mermaid
-graph TD
-    A[📝 Input Text] --> B[⚙️ Apply Compression Algorithms]
-    B --> C[📊 Calculate Metrics]
-    C --> D[📈 Compare Results]
-    D --> E[🏆 Detect Best Algorithm]
-    E --> F[📄 Display Results]
 | Algorithm  | Technique            | Description                           |
 | ---------- | -------------------- | ------------------------------------- |
 | Golomb     | Statistical Encoding | Efficient for geometric distributions |
