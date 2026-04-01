@@ -1,82 +1,79 @@
-Compression Algorithms Comparison Tool
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=60A5FA&center=true&vCenter=true&lines=Compression+Algorithms+Comparison;Data+Encoding+%26+Efficiency;Python+GUI+Project+💻" />
+  <br><br>
+  <img src="https://img.shields.io/badge/💻-Python%20Project-1E40AF?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/📊-Data%20Compression-3B82F6?style=for-the-badge&logo=databricks&logoColor=white" />
+  <img src="https://img.shields.io/badge/🧠-Algorithms-60A5FA?style=for-the-badge" />
+</div>
 
-A comprehensive GUI application that compares five popular data compression algorithms: Golomb, LZW, RLE, Huffman, and Arithmetic Encoding. Input text and instantly see detailed compression metrics, efficiency analysis, and optimal algorithm recommendations.
+---
 
-✨ Features
+## <div align="center"><b style="color:#1E40AF">📊 Project Overview</b></div>
 
-Interactive GUI built with Tkinter
-Five Compression Algorithms with real-time comparison
-Comprehensive Metrics:
-Bits before/after encoding
-Compression ratio
-Entropy calculation
-Average code length
-Efficiency scores
-Character probabilities
-Optimal Algorithm Detection - Automatically identifies the best algorithm for your input
-Detailed Results Display with formatted output
+This project is an **interactive GUI-based application** built with **Python (Tkinter)** that compares multiple **data compression algorithms** in real time.
 
-Quick Start
-Prerequisites
-Python 3.7+
-Tkinter (usually included with Python)
+It allows users to input text and instantly analyze how different algorithms perform in terms of:
 
-git clone https://github.com/yourusername/compression-comparison.git
-cd compression-comparison
+- 📉 Compression efficiency  
+- 📊 Entropy & encoding metrics  
+- ⚡ Performance comparison  
+- 🏆 Best algorithm recommendation  
 
-python compression_tool.py
+<div align="center">
+  <img src="https://img.shields.io/badge/⚡-Real%20Time%20Analysis-60A5FA?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/📊-Metrics-3B82F6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🏆-Optimization-1E40AF?style=for-the-badge" />
+</div>
 
-📖 Usage
-Launch the application
-Enter text in the input field
-Click "Encode" to analyze
-View results - detailed metrics for all algorithms
-Click "Show Results" to expand the full analysis
-Optimal algorithm is automatically highlighted
+---
 
-📈 Example Output
+## ✨ **Key Features**
 
-Golomb Encoding Results:
-Bits before encoding: 104
-Bits after encoding: 12
-Compression ratio: 8.67
+| Feature | Description |
+|--------|------------|
+| 🖥️ Interactive GUI | Built using Tkinter for easy usage |
+| 🧠 Multi-Algorithm Support | Golomb, LZW, RLE, Huffman, Arithmetic |
+| 📊 Detailed Metrics | Compression ratio, entropy, efficiency |
+| ⚡ Real-Time Analysis | Instant results after input |
+| 🏆 Best Algorithm Detection | Automatically selects optimal method |
+| 📈 Visualization-ready Output | Structured and readable results |
+
+---
+
+## 🖥️ **System Flow**
+
+```mermaid
+graph TD
+    A[📝 Input Text] --> B[⚙️ Apply Compression Algorithms]
+    B --> C[📊 Calculate Metrics]
+    C --> D[📈 Compare Results]
+    D --> E[🏆 Detect Best Algorithm]
+    E --> F[📄 Display Results]
+| Algorithm  | Technique            | Description                           |
+| ---------- | -------------------- | ------------------------------------- |
+| Golomb     | Statistical Encoding | Efficient for geometric distributions |
+| LZW        | Dictionary-Based     | Builds dynamic encoding dictionary    |
+| RLE        | Run-Length           | Compresses repeated characters        |
+| Huffman    | Tree-Based           | Optimal prefix coding                 |
+| Arithmetic | Probability-Based    | High precision encoding               |
+
+| Metric                | Formula                         | Description                   |
+| --------------------- | ------------------------------- | ----------------------------- |
+| Compression Ratio     | Original Bits / Compressed Bits | Higher = better compression   |
+| Entropy               | -∑(p log₂ p)                    | Measures randomness           |
+| Efficiency            | Entropy / Avg Code Length       | Closeness to optimal encoding |
+| Avg Code Length       | Bits / Symbols                  | Encoding efficiency           |
+| Character Probability | freq / total                    | Used in encoding              |
+
+📈 Sample Output
+Huffman Encoding:
+Bits Before: 104
+Bits After: 12
+Compression Ratio: 8.67
 Entropy: 1.23
 
-LZW Compression Results:
+LZW Compression:
 Compression Ratio: 4.2
 Efficiency: 0.89
 
-Optimal Algorithm: Huffman Compression
-
-🛠️ Technical Details
-
-Key Metrics Calculated
-Compression Ratio: Original Bits / Compressed Bits
-Entropy: -∑(p*log₂(p))
-Efficiency: Entropy / Average Code Length
-Average Length: Total Compressed Bits / Symbols
-Algorithm Implementations
-Golomb: Unary + binary encoding with parameter M=2
-LZW: Dynamic dictionary building (codes 0-255 start)
-RLE: Run-length encoding with count+character pairs
-Huffman: Optimal prefix codes via priority queue
-Arithmetic: Range encoding with symbol probabilities
-
-🔧 Customization
-Modify algorithm parameters in the encode_text() function:
-
-
-
-
-M = 2  # Golomb parameter
-# Adjust for different text characteristics
-
-📁 File Structure
-
-compression_tool.py  # Main application
-README.md           # This file
-
-
-👩‍💻 Author
-Nourhan Mohammed  
-Computer Science Student | Data Analyst
+🏆 Optimal Algorithm: Huffman
